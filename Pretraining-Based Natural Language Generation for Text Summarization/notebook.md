@@ -16,4 +16,8 @@ Experimental datasets: CNN/Daily Mail, New York Times
 
 Text summarization generates summaries from input documents while keeping salient information. It is an important task and can be applied to several real-world applications. There are two main text summarization techniques: extractive and abstractive. Extractive summarization generates summary by selecting salient sentences or phrases from the source text, while abstractive methods paraphrase and restructure sentences to compose the summary. This paper focus on abstractive summarization as it is more flexible and thus can generate more diverse summaries.
 
-many approachs are based on neural sequence-to-sequence framework.
+Many approachs are based on neural sequence-to-sequence framework. Two issues, 1) these methods use left-context-only decoder, thus do not have complete context when predictings each word. 2) they do not utilize the pre-trained contextualized language models on the decoder side, so it is more difficult for the decoder to learn summary representations, context interactions and language modeling together.
+
+- 1. propose a natural language generation model based on BERT, making good use of the pre-trained language model in the encoder and decoder process, and the model can be trained end-to-end without handcrafted features.
+
+- 2. design a two-stage decoder process. In this architecture, our model can generate each word of the summary considering both sides’ context information.
