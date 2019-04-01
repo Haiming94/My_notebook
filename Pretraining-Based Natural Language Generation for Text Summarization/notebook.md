@@ -11,3 +11,9 @@ It is the first method which applies the BERT into text generation tasks.
 Task: text summarization task
 
 Experimental datasets: CNN/Daily Mail, New York Times
+
+#### Introduction
+
+Text summarization generates summaries from input documents while keeping salient information. It is an important task and can be applied to several real-world applications. There are two main text summarization techniques: extractive and abstractive. Extractive summarization generates summary by selecting salient sentences or phrases from the source text, while abstractive methods paraphrase and restructure sentences to compose the summary. This paper focus on abstractive summarization as it is more flexible and thus can generate more diverse summaries.
+
+many approachs are based on neural sequence-to-sequence framework.
